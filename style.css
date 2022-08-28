@@ -1,53 +1,41 @@
-body {
-  background: #0f0e09;
+table,tr,td{
+  border: 1px solid azure;
+  border-collapse: collapse;
+}
 
+table{
+  width: 80%;
+  background-color: black;
+}
+tr,td{
+  color: azure;
+  width: 80%;
+}
+
+body{
+  background: #0F0E09;
   color: WhiteSmoke;
-
   font-size: 25px;
-
   font-family: Helvetica;
 }
 
-p {
-  font-size: 1.5rem;
-}
-h1 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-
-  color: red;
-
+h1{
+  color: azure;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: lighter;
-
-  font-size: 10px;
+  font-size: 50px;
 }
-
-h2 {
-  font-family: Courier;
-
-  color: WhiteSmoke;
-
-  font-weight: lighter;
-
-  font-size: 3rem;
-  margin: 2rem;
-  margin-left: 0;
-}
-
-a {
-  color: yellow;
-}
-
-a:hover {
-  text-decoration: none;
-
-  color: purple;
+h2{
+  color: azure;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
 }
 
 #banner {
   text-align: center;
 
   background-image: url(./images/restaurante.jpg);
-
+  height: 100%;
   background-size: cover;
 
   padding: 150px;
@@ -100,8 +88,13 @@ li a {
   text-decoration: none;
 }
 
-.nav-button {
+nav {
+  position: relative;
+  width: 100%;
   background-color: OliveDrab;
+}
+
+.nav-button {
   color: white;
   padding: 15px 32px;
   text-align: center;
