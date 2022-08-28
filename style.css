@@ -109,18 +109,6 @@ nav {
   transition: 1s;
 }
 
-.tarjeta {
-  padding: 2rem;
-  margin: 0rem;
-  width: 100%;
-}
-.tarjeta button {
-  float: left;
-  width: 16rem;
-  height: 16rem;
-  margin-bottom: 2rem;
-  margin-right: 2rem;
-}
 #footer a {
   color: lightgrey;
 
