@@ -1,0 +1,66 @@
+<html>
+
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Carta Resto Bar</title>
+
+  </head>
+
+  <body>
+      <h1>Cooperativa de la sala 3</h1>
+      <nav>
+        <a href="/index.html" class="nav-button">INICIO</a>
+        <a href="/menu.html" class="nav-button">MENU</a>
+        <a href="#" class="nav-button">CONTACTO</a>
+        <a href="#" class="nav-button">PEDIR ONLINE</a>
+        <a href="#" class="nav-button">LOCALES</a>
+        <a href="#" class="nav-button">MÚSICA</a>
+      </nav>
+        <div id="banner"></div>
+        <div class="container">
+            <form action="action.php" method="POST">
+                <label for="lugar">Sucursal</label>
+                <input list="lugar" name="lugar" require>
+                    <datalist id="lugar">
+                        <option value="Aristobulo del valle">
+                        <option value="Cementerio">
+                        <option value="Cordillera de los Andes">
+                    </datalist><br>
+                    <label for="accion">Comida:</label>
+                    <input list="accion" required>
+                    <datalist id="accion">
+                        <option value="Hamburguesa">
+                        <option value="Pasto">
+                        <option value="Agua">
+                    </datalist><br>
+                    <label>Cantidad:</label>
+                    <input type="number" require><br>
+                    <label>Comentarios: </label><br>
+                    <textarea type="textarea" rows="4" cols="50" name="descripcion" require></textarea>
+                    <br>
+                </form>
+        </div>
+
+
+    <div id="footer">
+      <p>¡Seguínos en nuestras redes!</p>
+      <ul class="list-inline">
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+
+ 
+
+  </body>
+
+</html>
