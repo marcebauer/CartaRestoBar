@@ -1,66 +1,274 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel='stylesheet' href='style.css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Carta Resto Bar</title>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pedidos</title>
   </head>
 
   <body>
-      <h1>Cooperativa de la sala 3</h1>
-      <nav>
-        <a href="/index.html" class="nav-button">INICIO</a>
-        <a href="/menu.html" class="nav-button">MENU</a>
-        <a href="#" class="nav-button">CONTACTO</a>
-        <a href="#" class="nav-button">PEDIR ONLINE</a>
-        <a href="#" class="nav-button">LOCALES</a>
-        <a href="#" class="nav-button">MÚSICA</a>
-      </nav>
-        <div id="banner"></div>
-        <div class="container">
-            <form action="action.php" method="POST">
-                <label for="lugar">Sucursal</label>
-                <input list="lugar" name="lugar" require>
-                    <datalist id="lugar">
-                        <option value="Aristobulo del valle">
-                        <option value="Cementerio">
-                        <option value="Cordillera de los Andes">
-                    </datalist><br>
-                    <label for="accion">Comida:</label>
-                    <input list="accion" required>
-                    <datalist id="accion">
-                        <option value="Hamburguesa">
-                        <option value="Pasto">
-                        <option value="Agua">
-                    </datalist><br>
-                    <label>Cantidad:</label>
-                    <input type="number" require><br>
-                    <label>Comentarios: </label><br>
-                    <textarea type="textarea" rows="4" cols="50" name="descripcion" require></textarea>
-                    <br>
-                </form>
-        </div>
-
-
-    <div id="footer">
-      <p>¡Seguínos en nuestras redes!</p>
-      <ul class="list-inline">
-        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-      </ul>
+    <h1>Cooperativa de la sala 3</h1>
+    <nav>
+      <a href="/index.html" class="nav-button">INICIO</a>
+      <a href="/menu.html" class="nav-button">MENU</a>
+      <a href="#" class="nav-button">CONTACTO</a>
+      <a href="/pedidos.html" class="nav-button">PEDIR ONLINE</a>
+      <a href="#" class="nav-button">LOCALES</a>
+      <a href="#" class="nav-button">MÚSICA</a>
+    </nav>
+    <div class="container">
+      <br />
+      <form action="action.php" method="POST">
+        <fieldset>
+          <legend>Datos del envío:</legend>
+          <label for="nombre">Nombre:</label><br />
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre"
+            required
+          /><br />
+          <label for="apellido">Apellido:</label><br />
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Apellido"
+            required
+          /><br />
+          <label for="direccion">Dirección:</label><br />
+          <input
+            type="text"
+            id="direccion"
+            name="direccion"
+            placeholder="Direccion"
+            required
+          />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Carnes:</legend>
+          <table>
+            <tr>
+              <td>
+                <label class="menu-label" for="carne1" id="carne1"
+                  >Bola de lomo:</label
+                >
+              </td>
+              <td><input type="number" min="0" placeholder="0" /></td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="carne2">Asado:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="carne2" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="menu-label" for="carne3">Bife angosto:</label>
+              </td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="carne3" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="menu-label" for="carne4">Bife ancho:</label>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="carne4"
+                /><br />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Ensaladas:</legend>
+          <table>
+            <tr>
+              <td>
+                <label class="menu-label" for="ensalada1" id="ensalada1"
+                  >Mixta:</label
+                >
+              </td>
+              <td><input type="number" min="0" placeholder="0" /></td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="ensalada2">Cesar:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="ensalada2" />
+              </td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="ensalada3">Griega:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="ensalada3" />
+              </td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="ensalada4">Rusa:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="ensalada4" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Pescado:</legend>
+          <table>
+            <tr>
+              <td>
+                <label class="menu-label" for="pescado1" id="pescado1"
+                  >Merluza:</label
+                >
+              </td>
+              <td><input type="number" min="0" placeholder="0" /></td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="pescado2">Salmon:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="pescado2" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="menu-label" for="pescado3">Mariscos:</label>
+              </td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="pescado3" />
+              </td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="pescado4">Sushi:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="pescado4" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Entradas:</legend>
+          <table>
+            <tr>
+              <td>
+                <label class="menu-label" for="entrada1" id="entrada1"
+                  >Tabla de fiambre:</label
+                >
+              </td>
+              <td><input type="number" min="0" placeholder="0" /></td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="entrada2">Rabas:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="entrada2" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="menu-label" for="entrada3">Papas fritas:</label>
+              </td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="entrada3" />
+              </td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="entrada4">Nachos:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="entrada4" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Bebidas con Alcohol:</legend>
+          <table>
+            <tr>
+              <td>
+                <label class="menu-label" for="licor1" id="licor1"
+                  >Cerveza:</label
+                >
+              </td>
+              <td><input type="number" min="0" placeholder="0" /></td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="licor2">Vino:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="licor2" />
+              </td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="licor3">Vodka:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="licor3" />
+              </td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="licor4">Campari:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="licor4" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Bebidas sin alcohol:</legend>
+          <table>
+            <tr>
+              <td>
+                <label class="menu-label" for="bebida1" id="bebida1"
+                  >Coca cola:</label
+                >
+              </td>
+              <td><input type="number" min="0" placeholder="0" /></td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="bebida2">Sprite:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="bebida2" />
+              </td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="bebida3">Fanta:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="bebida3" />
+              </td>
+            </tr>
+            <tr>
+              <td><label class="menu-label" for="bebida4">Agua:</label></td>
+              <td>
+                <input type="number" min="0" placeholder="0" id="bebida4" />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <input type="submit" value="Enviar" />
+      </form>
     </div>
-
- 
-
   </body>
-
 </html>
