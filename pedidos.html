@@ -18,22 +18,23 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script src="validacionFormulario.js"></script>
     <title>Pedidos</title>
   </head>
 
   <body>
     <h1>Cooperativa de la sala 3</h1>
     <nav>
-      <a href="/index.html" class="nav-button">INICIO</a>
-      <a href="/menu.html" class="nav-button">MENU</a>
+      <a href="index.html" class="nav-button">INICIO</a>
+      <a href="menu.html" class="nav-button">MENU</a>
       <a href="#" class="nav-button">CONTACTO</a>
-      <a href="/pedidos.html" class="nav-button">PEDIR ONLINE</a>
+      <a href="pedidos.html" class="nav-button">PEDIR ONLINE</a>
       <a href="#" class="nav-button">LOCALES</a>
       <a href="#" class="nav-button">MÚSICA</a>
     </nav>
     <div class="container">
       <br />
-      <form action="action.php" method="POST">
+      <form action="action.php" method="POST" onsubmit="return validateForm()">
         <fieldset>
           <legend>Datos del envío:</legend>
           <label for="nombre">Nombre:</label><br />
@@ -71,12 +72,25 @@
                   >Bola de lomo:</label
                 >
               </td>
-              <td><input type="number" min="0" placeholder="0" /></td>
+              <td>
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                />
+              </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="carne2">Asado:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="carne2" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="carne2"
+                />
               </td>
             </tr>
             <tr>
@@ -84,7 +98,13 @@
                 <label class="menu-label" for="carne3">Bife angosto:</label>
               </td>
               <td>
-                <input type="number" min="0" placeholder="0" id="carne3" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="carne3"
+                />
               </td>
             </tr>
             <tr>
@@ -112,24 +132,49 @@
                   >Mixta:</label
                 >
               </td>
-              <td><input type="number" min="0" placeholder="0" /></td>
+              <td>
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                />
+              </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="ensalada2">Cesar:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="ensalada2" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="ensalada2"
+                />
               </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="ensalada3">Griega:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="ensalada3" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="ensalada3"
+                />
               </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="ensalada4">Rusa:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="ensalada4" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="ensalada4"
+                />
               </td>
             </tr>
           </table>
@@ -144,12 +189,25 @@
                   >Merluza:</label
                 >
               </td>
-              <td><input type="number" min="0" placeholder="0" /></td>
+              <td>
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                />
+              </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="pescado2">Salmon:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="pescado2" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="pescado2"
+                />
               </td>
             </tr>
             <tr>
@@ -157,13 +215,25 @@
                 <label class="menu-label" for="pescado3">Mariscos:</label>
               </td>
               <td>
-                <input type="number" min="0" placeholder="0" id="pescado3" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="pescado3"
+                />
               </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="pescado4">Sushi:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="pescado4" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="pescado4"
+                />
               </td>
             </tr>
           </table>
@@ -178,12 +248,25 @@
                   >Tabla de fiambre:</label
                 >
               </td>
-              <td><input type="number" min="0" placeholder="0" /></td>
+              <td>
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                />
+              </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="entrada2">Rabas:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="entrada2" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="entrada2"
+                />
               </td>
             </tr>
             <tr>
@@ -191,13 +274,25 @@
                 <label class="menu-label" for="entrada3">Papas fritas:</label>
               </td>
               <td>
-                <input type="number" min="0" placeholder="0" id="entrada3" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="entrada3"
+                />
               </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="entrada4">Nachos:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="entrada4" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="entrada4"
+                />
               </td>
             </tr>
           </table>
@@ -212,24 +307,49 @@
                   >Cerveza:</label
                 >
               </td>
-              <td><input type="number" min="0" placeholder="0" /></td>
+              <td>
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                />
+              </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="licor2">Vino:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="licor2" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="licor2"
+                />
               </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="licor3">Vodka:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="licor3" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="licor3"
+                />
               </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="licor4">Campari:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="licor4" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="licor4"
+                />
               </td>
             </tr>
           </table>
@@ -244,24 +364,49 @@
                   >Coca cola:</label
                 >
               </td>
-              <td><input type="number" min="0" placeholder="0" /></td>
+              <td>
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                />
+              </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="bebida2">Sprite:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="bebida2" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="bebida2"
+                />
               </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="bebida3">Fanta:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="bebida3" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="bebida3"
+                />
               </td>
             </tr>
             <tr>
               <td><label class="menu-label" for="bebida4">Agua:</label></td>
               <td>
-                <input type="number" min="0" placeholder="0" id="bebida4" />
+                <input
+                  class="elem-menu"
+                  type="number"
+                  min="0"
+                  placeholder="0"
+                  id="bebida4"
+                />
               </td>
             </tr>
           </table>
